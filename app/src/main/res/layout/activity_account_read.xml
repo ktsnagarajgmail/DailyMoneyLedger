@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountRead">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/teal_700"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+    <TextView
+        android:id="@+id/textViewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Account Information"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewNameRead"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:text="Full Name"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/textViewAccount"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="18dp" />
+
+    <TextView
+        android:id="@+id/txtViewNameAccount"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/textViewNameRead"
+        android:layout_below="@+id/textViewAccount"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="18dp"
+        android:textColor="@color/teal_700"
+        android:gravity="center_vertical"
+        android:textSize="18sp" />
+
+       <TextView
+        android:id="@+id/textViewUserNameRead"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewNameRead"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp"
+        android:text="UserName"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtViewUserNameAccount"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/textViewUserNameRead"
+        android:layout_below="@+id/txtViewNameAccount"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewMobileRead"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewUserNameRead"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:text="Mobile Number"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtViewMobileAccount"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtViewUserNameAccount"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/textViewMobileRead"
+        android:gravity="center_vertical"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewEmailRead"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewMobileRead"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:text="E-mail ID"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtViewEmailAccount"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtViewMobileAccount"
+        android:layout_toRightOf="@+id/textViewEmailRead"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/teal_700"
+        android:gravity="center_vertical"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewEmailAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Edit"
+        android:backgroundTint="@color/teal_900"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

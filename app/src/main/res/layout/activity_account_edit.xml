@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountEdit">
+
+    <TextView
+        android:id="@+id/txtViewMobile"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="18dp"
+        android:gravity="center_vertical"
+        android:text="Mobile Number"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@+id/txtViewUserName" />
+
+    <EditText
+        android:id="@+id/editTextMobile"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="18dp"
+        android:gravity="center_vertical"
+        android:hint="Enter the Mobile Number"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/txtViewMobile"
+        android:layout_below="@+id/editTextUserName"/>
+
+    <TextView
+        android:id="@+id/txtViewEmail"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:text="E-Mail ID"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@+id/txtViewMobile" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="18dp"
+        android:gravity="center_vertical"
+        android:hint="Enter the Email ID"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/txtViewEmail"
+        android:layout_below="@id/editTextMobile"/>
+
+    <TextView
+        android:id="@+id/txtViewUserName"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="UserName"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textViewName" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="18dp"
+        android:gravity="center_vertical"
+        android:hint="Enter the UserName"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/txtViewUserName"
+        android:layout_below="@+id/editTextName" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="18dp"
+        android:gravity="center_vertical"
+        android:text="Full Name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_below="@+id/textViewUpdateAccount" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="18dp"
+        android:gravity="center_vertical"
+        android:inputType="text"
+        android:layout_toRightOf="@+id/textViewName"
+        android:layout_below="@+id/textViewUpdateAccount"
+        android:hint="Enter the Full Name" />
+
+    <TextView
+        android:id="@+id/textViewUpdateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:text="Update Account Information"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="80dp"
+        android:text="Save"
+        android:backgroundTint="@color/teal_900"
+        android:textColor="@color/white"
+        android:layout_below="@+id/txtViewEmail" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_900"
+        android:textColor="@color/white"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:text="Back"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_toRightOf="@+id/btnSave"/>
+</RelativeLayout>

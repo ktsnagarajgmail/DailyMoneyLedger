@@ -16,32 +16,35 @@
 
             <TextView
                 android:id="@+id/idType"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="3dp"
                 android:text="Type"
-                android:textColor="@color/black" />
+                android:gravity="left"
+                android:textColor = "?android:textColorPrimary" />
 
 
             <!--text view for our course duration-->
             <TextView
                 android:id="@+id/idAmount"
-                android:layout_width="wrap_content"
+                android:layout_width="23dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="3dp"
                 android:text="Amount"
-                android:textColor="@color/black" />
+                android:gravity="left"
+                android:textColor = "?android:textColorPrimary" />
 
             <TextView
                 android:id="@+id/idDesc"
-                android:layout_width="wrap_content"
+                android:layout_width="199dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="3dp"
                 android:text="Description"
-                android:textColor="@color/black" />
+                android:gravity="left"
+                android:textColor = "?android:textColorPrimary" />
 
         </LinearLayout>
 

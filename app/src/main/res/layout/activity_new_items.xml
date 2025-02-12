@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_100"
+    android:background="@color/teal_700"
     tools:context=".NewItems">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/white"
         android:text="New Entry"
         android:textSize="25dp"
         android:textStyle="bold"/>
@@ -33,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Credit(+)"
+            android:textColor="@color/white"
             android:layout_marginStart="25dp"/>
 
         <RadioButton
@@ -40,6 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Debit(-)"
+            android:textColor="@color/white"
             android:layout_marginStart="35dp"/>
     </RadioGroup>
 
@@ -51,6 +53,7 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:hint="0.00"
+        android:textColorHint="@color/white"
         android:inputType="text" />
 
     <EditText
@@ -58,6 +61,7 @@
         android:layout_width="223dp"
         android:layout_height="wrap_content"
         android:hint="Description"
+        android:textColorHint="@color/white"
         android:layout_toRightOf="@+id/editAmount"
         android:layout_below="@+id/rdG"
         android:layout_marginTop="5dp"
@@ -71,7 +75,7 @@
         android:layout_below="@+id/editAmount"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="@color/teal_900"
+        android:backgroundTint="@color/black"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:text="Add" />
